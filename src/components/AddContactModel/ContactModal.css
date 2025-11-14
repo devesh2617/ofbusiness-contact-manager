@@ -1,0 +1,158 @@
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal container */
+.modal-container {
+  background: #fff;
+  padding: 24px 32px 32px 32px;
+  width: 678px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  color: #212121;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.close-btn {
+  font-size: 28px;
+  color: #919191;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Form rows */
+.row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+/* Form group */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.required {
+  color: #dc143c;
+  margin-left: 2px;
+  font-weight: 600;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+select {
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #212121;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  border-color: #008aff;
+}
+
+/* Error input */
+.input-error {
+  border-color: #dc143c !important;
+}
+
+/* Error message */
+.error-msg {
+  margin-top: 4px;
+  font-size: 10px;
+  color: #dc143c;
+  font-weight: 600;
+}
+
+/* Buttons container */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+/* Cancel button */
+.btn-cancel {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  color: #0075f4;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background-color: rgba(0, 117, 244, 0.12);
+}
+
+/* Submit button */
+.btn-submit {
+  background-color: #0075f4;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 26px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #005ecf;
+}

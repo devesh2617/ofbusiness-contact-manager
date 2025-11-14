@@ -1,0 +1,25 @@
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #008aff 0%, #00d3b6 100%);
+  padding: 8px 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header-title {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  user-select: none;
+}
