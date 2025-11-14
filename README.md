@@ -1,16 +1,28 @@
-# React + Vite
+Step-by-Step Setup
+Clone the Repository: Open your terminal or command prompt and run:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Copy code
+git clone https://github.com/devesh2617/ofbusiness-contact-manager.git
+This will download the project files to a folder named ofbusiness-contact-manager.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Navigate to the Project Directory: Change into the cloned directory:
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Copy code
+cd contact-manager
+Install Dependencies: Run the following command to install all required packages (as defined in package.json):
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Copy code
+npm install
+This may take a few minutes. If you encounter any errors, ensure your Node.js version is compatible or check for any specific instructions in the repository's README file.
+
+Run the Development Server: Start the app in development mode:
+
+
+Copy code
+npm run dev
+This will typically launch the app on a local server (e.g., http://localhost:5173 or another port specified in the console output).
+Open your web browser and navigate to the provided URL to view the app.
+The server will auto-reload on code changes, making it ideal for development.
